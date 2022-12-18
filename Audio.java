@@ -29,5 +29,10 @@ public class Audio extends Recordings{
   public void setDigitalAudio(boolean digitalAudio){
     this.digitalAudio = digitalAudio;
   }
+
+  public String toString(String title, String composer, String voiceParts, String date, String group, int runTime, boolean cD, boolean digitalAudio){
+    return super.toString(title, composer, voiceParts, group, runTime);
+    System.out.println("Have CDs: "+cd+" Have digitals: "+digitalAudio);
+  }
   
 }

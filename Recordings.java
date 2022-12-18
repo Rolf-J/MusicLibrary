@@ -49,5 +49,9 @@ public class Recordings extends Music {
   public void setRunTime(int runTime){
     this.runTime = runTime;
   }
-  
+
+  public String toString(String title, String composer, String voiceParts, String date, String group, String event, int yearRecorded, int runTime){
+    return super.toString(title, composer, voiceParts);
+    System.out.println("Sang by: "+group+" at "+event+" "+year/n+runTime);
+  }
 }

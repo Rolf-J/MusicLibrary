@@ -29,4 +29,9 @@ public class Visual extends Recordings {
   public void setDigitalVideo(boolean digitalVideo){
     this.digitalVideo = digitalVideo;
   }
+
+  public String toString(String title, String composer, String voiceParts, String date, String group, int runTime, boolean dVD, boolean digitalVideo){
+    return super.toString(title, composer, voiceParts, group, runTime);
+    System.out.println("Have DVDs: "+dVd+" Have digitals: "+digitalVideo);
+  }
 }

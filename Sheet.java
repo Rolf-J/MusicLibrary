@@ -39,5 +39,10 @@ public class Sheet extends Music {
   public void setCompany(String company){
     this.company = company;
   }
+
+  public String toString(String title, String composer, String voiceParts, String date, int realCopies, int photoCopies){
+    return super.toString(title, compser, voiceParts);
+    System.out.println("Real Copies: "+realCopies+"Photo Copies: "+photoCopies);
+  }
   
 }

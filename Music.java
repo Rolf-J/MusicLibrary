@@ -70,4 +70,8 @@ public class Music{
     this.checkedOut = checkedOut;
   }
 
+  public String toString(String title, String composer, String voiceParts){
+    System.out.println(title+" by "+composer+" "+voiceParts);
+  }
+
 }
