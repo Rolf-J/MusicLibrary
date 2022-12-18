@@ -3,15 +3,15 @@ public class Sheet extends Music {
   private int realCopies;
   private String company;
 
-  public Sheet(String title, String composer, String voiceParts, String date, int realCopies, int photo copies, String company){
-    super(String title, String composer, String voiceParts, String date);
+  public Sheet(String title, String composer, String voiceParts, String date, int realCopies, int photoCopies, String company){
+    super(title, composer, voiceParts, date);
     this.realCopies = realCopies;
     this.photoCopies = photoCopies;
     this.company = company;
   }
 
   public Sheet(String title, String composer, String voiceParts, String date, int realCopies, int photoCopies){
-    super(String title, String composer, String voiceParts, String date);
+    super(title, composer, voiceParts, date);
     this.realCopies = realCopies;
     this.photoCopies = photoCopies;
   }

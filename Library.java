@@ -46,10 +46,26 @@ public class Library {
             }
 
             if(ans == 3){ //check out
+              System.out.println("Enter title: ");
+                String title = sc.nextLine();
+                for(int i = 0; i<scores.size(); i++){
+                    if( scores.get(i).getTitle().equals(title)){
+                        System.out.println(scores.get(i));
+                        scores.get(i).setCheckedOut(true);
+                    }
+                }
+            }
         
 
             if(ans == 4){ //check in
-            
+               System.out.println("Enter title: ");
+                String title = sc.nextLine();
+                for(int i = 0; i<scores.size(); i++){
+                    if( scores.get(i).getTitle().equals(title)){
+                        System.out.println(scores.get(i));
+                        scores.get(i).setCheckedOut(true);
+                    }
+                }
             }
 
             if(ans == 5){ //search
@@ -62,17 +78,15 @@ public class Library {
                         notFound =false;
                     }
                 } 
-                
-                
+              
                 if(notFound){
-                    System.out.println("Not found");
+                  System.out.println("Not found");
                 }
             }
 
 
-            }
+          }
         }
     }
 
-}
 

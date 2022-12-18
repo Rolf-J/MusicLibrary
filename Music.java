@@ -5,6 +5,7 @@ public class Music{
   private String voiceParts;
   private String date;
   private int rentalPeriod;
+  private boolean checkedOut;
 
   public Music(String title, String composer, String voiceParts, String date){
     this.title = title;
@@ -59,6 +60,14 @@ public class Music{
 
   public void setRentalPeriod(int rentalPeriod){
     this.rentalPeriod = rentalPeriod;
+  }
+
+  public boolean getCheckedOut(){
+    return checkedOut;
+  }
+
+  public void setCheckedOut(boolean checkedOut){
+    this.checkedOut = checkedOut;
   }
 
 }

@@ -5,7 +5,7 @@ public class Recordings extends Music {
   private int yearRecorded;
 
   public Recordings(String title, String composer, String voiceParts, String date, String group, String event, int yearRecorded, int runTime){
-    super(String title, String composer, String voiceParts, String date);
+    super(title, composer, voiceParts, date);
     this.group = group;
     this.event = event;
     this.yearRecorded =  yearRecorded;
@@ -13,7 +13,7 @@ public class Recordings extends Music {
   }
 
   public Recordings(String title, String composer, String voiceParts, String date, String group, int runTime){
-    super(String title, String composer, String voiceParts, String date);
+    super(title, composer, voiceParts, date);
     this.group = group;
     this.runTime = runTime;
   }
@@ -35,7 +35,7 @@ public class Recordings extends Music {
   }
 
   public int getYearRecorded(){
-    retrun yearRecorded;
+    return yearRecorded;
   }
 
   public void setYearRecorded(int yearRecorded){
@@ -43,10 +43,10 @@ public class Recordings extends Music {
   }
 
   public int getRunTime(){
-    retrun runTime;
+    return runTime;
   }
 
-  public void getRunTime(int runTime){
+  public void setRunTime(int runTime){
     this.runTime = runTime;
   }
   
